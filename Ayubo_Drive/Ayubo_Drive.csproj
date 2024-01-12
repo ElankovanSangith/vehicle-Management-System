@@ -1,0 +1,557 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{95119588-DA34-4782-B79F-B0159D453E1E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Ayubo_Drive</RootNamespace>
+    <AssemblyName>Ayubo_Drive</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Ayubo_DBDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ayubo_DBDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Ayubo_DBDataSet10.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ayubo_DBDataSet10.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Ayubo_DBDataSet11.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ayubo_DBDataSet11.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Ayubo_DBDataSet111.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ayubo_DBDataSet111.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Ayubo_DBDataSet12.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ayubo_DBDataSet12.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Ayubo_DBDataSet13.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ayubo_DBDataSet13.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Ayubo_DBDataSet14.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ayubo_DBDataSet14.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Ayubo_DBDataSet15.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ayubo_DBDataSet15.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Ayubo_DBDataSet16.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ayubo_DBDataSet16.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Ayubo_DBDataSet17.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ayubo_DBDataSet17.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Ayubo_DBDataSet18.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ayubo_DBDataSet18.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Ayubo_DBDataSet19.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ayubo_DBDataSet19.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Ayubo_DBDataSet20.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ayubo_DBDataSet20.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Ayubo_DBDataSet21.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ayubo_DBDataSet21.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Ayubo_DBDataSet211.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ayubo_DBDataSet211.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Ayubo_DBDataSet22.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ayubo_DBDataSet22.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Ayubo_DBDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ayubo_DBDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Ayubo_DBDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ayubo_DBDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Ayubo_DBDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ayubo_DBDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Ayubo_DBDataSet6.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ayubo_DBDataSet6.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Ayubo_DBDataSet7.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ayubo_DBDataSet7.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Ayubo_DBDataSet8.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ayubo_DBDataSet8.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Ayubo_DBDataSet9.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ayubo_DBDataSet9.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dashboard.Designer.cs">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Home_screen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Home_screen.Designer.cs">
+      <DependentUpon>Home_screen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login_form.Designer.cs">
+      <DependentUpon>Login_form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manage_customer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manage_customer.Designer.cs">
+      <DependentUpon>Manage_customer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manage_day.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manage_day.Designer.cs">
+      <DependentUpon>Manage_day.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manage_Driver.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manage_Driver.Designer.cs">
+      <DependentUpon>Manage_Driver.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manage_hire_package.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manage_hire_package.Designer.cs">
+      <DependentUpon>Manage_hire_package.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manage_long.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manage_long.Designer.cs">
+      <DependentUpon>Manage_long.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manage_rent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manage_rent.Designer.cs">
+      <DependentUpon>Manage_rent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manage_vehicle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manage_vehicle.Designer.cs">
+      <DependentUpon>Manage_vehicle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manage_vehicle_type.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manage_vehicle_type.Designer.cs">
+      <DependentUpon>Manage_vehicle_type.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Splash_screen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Splash_screen.Designer.cs">
+      <DependentUpon>Splash_screen.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Dashboard.resx">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Home_screen.resx">
+      <DependentUpon>Home_screen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login_form.resx">
+      <DependentUpon>Login_form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manage_customer.resx">
+      <DependentUpon>Manage_customer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manage_day.resx">
+      <DependentUpon>Manage_day.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manage_Driver.resx">
+      <DependentUpon>Manage_Driver.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manage_hire_package.resx">
+      <DependentUpon>Manage_hire_package.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manage_long.resx">
+      <DependentUpon>Manage_long.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manage_rent.resx">
+      <DependentUpon>Manage_rent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manage_vehicle.resx">
+      <DependentUpon>Manage_vehicle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manage_vehicle_type.resx">
+      <DependentUpon>Manage_vehicle_type.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Splash_screen.resx">
+      <DependentUpon>Splash_screen.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Ayubo_DBDataSet.xsc">
+      <DependentUpon>Ayubo_DBDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Ayubo_DBDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ayubo_DBDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Ayubo_DBDataSet.xss">
+      <DependentUpon>Ayubo_DBDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Ayubo_DBDataSet10.xsc">
+      <DependentUpon>Ayubo_DBDataSet10.xsd</DependentUpon>
+    </None>
+    <None Include="Ayubo_DBDataSet10.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ayubo_DBDataSet10.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Ayubo_DBDataSet10.xss">
+      <DependentUpon>Ayubo_DBDataSet10.xsd</DependentUpon>
+    </None>
+    <None Include="Ayubo_DBDataSet11.xsc">
+      <DependentUpon>Ayubo_DBDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="Ayubo_DBDataSet11.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ayubo_DBDataSet11.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Ayubo_DBDataSet11.xss">
+      <DependentUpon>Ayubo_DBDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="Ayubo_DBDataSet111.xsc">
+      <DependentUpon>Ayubo_DBDataSet111.xsd</DependentUpon>
+    </None>
+    <None Include="Ayubo_DBDataSet111.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ayubo_DBDataSet111.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Ayubo_DBDataSet111.xss">
+      <DependentUpon>Ayubo_DBDataSet111.xsd</DependentUpon>
+    </None>
+    <None Include="Ayubo_DBDataSet12.xsc">
+      <DependentUpon>Ayubo_DBDataSet12.xsd</DependentUpon>
+    </None>
+    <None Include="Ayubo_DBDataSet12.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ayubo_DBDataSet12.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Ayubo_DBDataSet12.xss">
+      <DependentUpon>Ayubo_DBDataSet12.xsd</DependentUpon>
+    </None>
+    <None Include="Ayubo_DBDataSet13.xsc">
+      <DependentUpon>Ayubo_DBDataSet13.xsd</DependentUpon>
+    </None>
+    <None Include="Ayubo_DBDataSet13.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ayubo_DBDataSet13.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Ayubo_DBDataSet13.xss">
+      <DependentUpon>Ayubo_DBDataSet13.xsd</DependentUpon>
+    </None>
+    <None Include="Ayubo_DBDataSet14.xsc">
+      <DependentUpon>Ayubo_DBDataSet14.xsd</DependentUpon>
+    </None>
+    <None Include="Ayubo_DBDataSet14.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ayubo_DBDataSet14.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Ayubo_DBDataSet14.xss">
+      <DependentUpon>Ayubo_DBDataSet14.xsd</DependentUpon>
+    </None>
+    <None Include="Ayubo_DBDataSet15.xsc">
+      <DependentUpon>Ayubo_DBDataSet15.xsd</DependentUpon>
+    </None>
+    <None Include="Ayubo_DBDataSet15.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ayubo_DBDataSet15.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Ayubo_DBDataSet15.xss">
+      <DependentUpon>Ayubo_DBDataSet15.xsd</DependentUpon>
+    </None>
+    <None Include="Ayubo_DBDataSet16.xsc">
+      <DependentUpon>Ayubo_DBDataSet16.xsd</DependentUpon>
+    </None>
+    <None Include="Ayubo_DBDataSet16.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ayubo_DBDataSet16.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Ayubo_DBDataSet16.xss">
+      <DependentUpon>Ayubo_DBDataSet16.xsd</DependentUpon>
+    </None>
+    <None Include="Ayubo_DBDataSet17.xsc">
+      <DependentUpon>Ayubo_DBDataSet17.xsd</DependentUpon>
+    </None>
+    <None Include="Ayubo_DBDataSet17.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ayubo_DBDataSet17.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Ayubo_DBDataSet17.xss">
+      <DependentUpon>Ayubo_DBDataSet17.xsd</DependentUpon>
+    </None>
+    <None Include="Ayubo_DBDataSet18.xsc">
+      <DependentUpon>Ayubo_DBDataSet18.xsd</DependentUpon>
+    </None>
+    <None Include="Ayubo_DBDataSet18.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ayubo_DBDataSet18.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Ayubo_DBDataSet18.xss">
+      <DependentUpon>Ayubo_DBDataSet18.xsd</DependentUpon>
+    </None>
+    <None Include="Ayubo_DBDataSet19.xsc">
+      <DependentUpon>Ayubo_DBDataSet19.xsd</DependentUpon>
+    </None>
+    <None Include="Ayubo_DBDataSet19.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ayubo_DBDataSet19.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Ayubo_DBDataSet19.xss">
+      <DependentUpon>Ayubo_DBDataSet19.xsd</DependentUpon>
+    </None>
+    <None Include="Ayubo_DBDataSet20.xsc">
+      <DependentUpon>Ayubo_DBDataSet20.xsd</DependentUpon>
+    </None>
+    <None Include="Ayubo_DBDataSet20.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ayubo_DBDataSet20.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Ayubo_DBDataSet20.xss">
+      <DependentUpon>Ayubo_DBDataSet20.xsd</DependentUpon>
+    </None>
+    <None Include="Ayubo_DBDataSet21.xsc">
+      <DependentUpon>Ayubo_DBDataSet21.xsd</DependentUpon>
+    </None>
+    <None Include="Ayubo_DBDataSet21.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ayubo_DBDataSet21.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Ayubo_DBDataSet21.xss">
+      <DependentUpon>Ayubo_DBDataSet21.xsd</DependentUpon>
+    </None>
+    <None Include="Ayubo_DBDataSet211.xsc">
+      <DependentUpon>Ayubo_DBDataSet211.xsd</DependentUpon>
+    </None>
+    <None Include="Ayubo_DBDataSet211.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ayubo_DBDataSet211.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Ayubo_DBDataSet211.xss">
+      <DependentUpon>Ayubo_DBDataSet211.xsd</DependentUpon>
+    </None>
+    <None Include="Ayubo_DBDataSet22.xsc">
+      <DependentUpon>Ayubo_DBDataSet22.xsd</DependentUpon>
+    </None>
+    <None Include="Ayubo_DBDataSet22.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ayubo_DBDataSet22.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Ayubo_DBDataSet22.xss">
+      <DependentUpon>Ayubo_DBDataSet22.xsd</DependentUpon>
+    </None>
+    <None Include="Ayubo_DBDataSet3.xsc">
+      <DependentUpon>Ayubo_DBDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="Ayubo_DBDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ayubo_DBDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Ayubo_DBDataSet3.xss">
+      <DependentUpon>Ayubo_DBDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="Ayubo_DBDataSet4.xsc">
+      <DependentUpon>Ayubo_DBDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="Ayubo_DBDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ayubo_DBDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Ayubo_DBDataSet4.xss">
+      <DependentUpon>Ayubo_DBDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="Ayubo_DBDataSet5.xsc">
+      <DependentUpon>Ayubo_DBDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="Ayubo_DBDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ayubo_DBDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Ayubo_DBDataSet5.xss">
+      <DependentUpon>Ayubo_DBDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="Ayubo_DBDataSet6.xsc">
+      <DependentUpon>Ayubo_DBDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="Ayubo_DBDataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ayubo_DBDataSet6.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Ayubo_DBDataSet6.xss">
+      <DependentUpon>Ayubo_DBDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="Ayubo_DBDataSet7.xsc">
+      <DependentUpon>Ayubo_DBDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="Ayubo_DBDataSet7.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ayubo_DBDataSet7.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Ayubo_DBDataSet7.xss">
+      <DependentUpon>Ayubo_DBDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="Ayubo_DBDataSet8.xsc">
+      <DependentUpon>Ayubo_DBDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="Ayubo_DBDataSet8.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ayubo_DBDataSet8.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Ayubo_DBDataSet8.xss">
+      <DependentUpon>Ayubo_DBDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="Ayubo_DBDataSet9.xsc">
+      <DependentUpon>Ayubo_DBDataSet9.xsd</DependentUpon>
+    </None>
+    <None Include="Ayubo_DBDataSet9.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ayubo_DBDataSet9.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Ayubo_DBDataSet9.xss">
+      <DependentUpon>Ayubo_DBDataSet9.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
